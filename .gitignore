@@ -19,3 +19,8 @@ __pycache__
 .vscode
 Chinook.db
 node_modules
+out
+llama_custom_model_eval
+my_custom_dataset_small.json
+my_custom_dataset.json
+checkpoints
