@@ -1,0 +1,16 @@
+{
+  "name": "llm_using_javascript",
+  "version": "1.0.0",
+  "description": "using javascript to call large langauage models",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Adebayo Akinlalu",
+  "license": "ISC",
+  "dependencies": {
+    "@mlc-ai/web-llm": "^0.2.77",
+    "ts-node": "^10.9.2"
+  },
+  "type": "module"
+}

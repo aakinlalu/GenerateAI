@@ -16,9 +16,14 @@ __pycache__
 .hypothesis
 .pytest_cache 
 .hintrc
-<<<<<<< HEAD
-.vscode
-=======
 .vscode
 Chinook.db
->>>>>>> c104dbc5914d66cd663c11322c03f17169302329
+node_modules
+out
+llama_custom_model_eval
+my_custom_dataset_small.json
+my_custom_dataset.json
+checkpoints
+distilbert-base-uncased*
+ain_climbing_tree.png
+logdir
