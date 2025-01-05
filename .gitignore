@@ -24,3 +24,6 @@ llama_custom_model_eval
 my_custom_dataset_small.json
 my_custom_dataset.json
 checkpoints
+sunset.png
+distilbert-base-uncased*
+ain_climbing_tree.png
