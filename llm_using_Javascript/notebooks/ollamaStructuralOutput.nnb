@@ -1,0 +1,24 @@
+{
+    "cells": [
+        {
+            "language": "typescript",
+            "source": [
+                "import ollama from 'ollama';\nimport { z} from 'zod';\nimport { zodToJsonSchema } from 'zod-to-json-schema';\n\nconst Country = z.object({\n    name: z.string(),\n    capital: z.string(),\n    languages: z.array(z.string())\n});\n\nconst response = await ollama.chat({\n    messages: [{\n        'role': 'user',\n        'content': 'Tell me about Australia'\n    }],\n    format: zodToJsonSchema(Country)\n})\n\nconst country = Country.parse(JSON.parse(response.message.content));\nconsole.log(country);\n"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.error",
+                            "value": {
+                                "name": "ResponseError",
+                                "message": "model is required",
+                                "stack": "    at checkOk (/Users/aakinlalu/pet_project/GenerativeAI/llm_using_Javascript/node_modules/ollama/dist/browser.cjs:74:9)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async post (/Users/aakinlalu/pet_project/GenerativeAI/llm_using_Javascript/node_modules/ollama/dist/browser.cjs:120:3)\n    at async Ollama.processStreamableRequest (/Users/aakinlalu/pet_project/GenerativeAI/llm_using_Javascript/node_modules/ollama/dist/browser.cjs:252:22)\n    at async <Cell 1> [11, 0]\n    at async C (/Users/aakinlalu/.vscode/extensions/donjayamanne.typescript-notebook-2.0.6/out/extension/server/index.js:2:113337)\n    at async t.execCode (/Users/aakinlalu/.vscode/extensions/donjayamanne.typescript-notebook-2.0.6/out/extension/server/index.js:2:114306)"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

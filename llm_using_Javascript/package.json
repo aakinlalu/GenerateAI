@@ -10,7 +10,11 @@
   "license": "ISC",
   "dependencies": {
     "@mlc-ai/web-llm": "^0.2.77",
-    "ts-node": "^10.9.2"
+    "ollama": "^0.5.12",
+    "openai": "^4.80.0",
+    "ts-node": "^10.9.2",
+    "zod": "^3.24.1",
+    "zod-to-json-schema": "^3.24.1"
   },
   "type": "module"
 }
